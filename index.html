@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Startup</title>
+  <!-- Required meta tags -->
+    <!-- 
+      Bootstrap is developed mobile first, a strategy in which we optimize code for mobile devices first and then scale up components as necessary using CSS media queries. 
+      To ensure proper rendering and touch zooming for all devices, add the responsive viewport meta tag to your <head>.
+      -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <!-- Google Fonts -->
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
+    current from Bootstrap website, you will see the button grow transition being a lot faster
+    than in my video.  Use whichever style sheet you like best! -->
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">    
+
+    <!-- My own stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- 
+      Bootstrap's Containers are the most basic layout element in Bootstrap and are required when using our default grid system. Containers are used to contain, pad, and (sometimes) center the content within them. While containers can be nested, most layouts do not require a nested container.
+      For more info see the docs on Containers (most likely found under the Layout section)
+
+      Bootstrap's d-flex class enables the standard flexbox system to be used within Bootstrap
+
+      Once Bootstrap's d-flex class is used, I can use the align-items-center class in order to change the alignment of flex items to the center
+
+      Bootstrap's h-100 class is a shorthand to make the height of an element 100% of it's parent. In this case we are making the container's height the same as the body so that the children elements
+      can be centered in the middle of the entire page, instead of in the middle of a container that doesn't have full height. 
+    -->
+    <div class="container d-flex align-items-center h-100">
+      <!-- 
+        Bootstrap's Rows are wrappers for columns. Each column has horizontal padding (called a gutter) for controlling the space between them. This padding is then counteracted on the rows with negative margins to ensure the content in your columns is visually aligned down the left side. Rows also support modifier classes to uniformly apply column sizing and gutter classes to change the spacing of your content.
+        For more info see the docs on Grid (most likely found under the Layout section)
+      -->
+      <div class="row">
+        <!-- 
+          The <header> HTML element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
+
+          Bootstrap's text-center class will center aligned text on all viewport sizes.
+
+          Bootstrap's Columns are incredibly flexible. There are 12 template columns available per row, allowing you to create different combinations of elements that span any number of columns. Column classes indicate the number of template columns to span (e.g., col-4 spans four). widths are set in percentages so you always have the same relative sizing.
+
+        -->
+        <header class="text-center col-12">
+          <h1 class="text-uppercase"><strong>The biggest startup event of the year</strong></h1>
+          <!-- a little horizontal rule above button for style -->
+        </header>
+        <!-- the buffer class is just a custom class I am creating here and defining in my stylesheet for some additional space between the header and section elements -->
+        <div class="buffer col-12"></div>
+        <section class="text-center col-12">
+          <hr>
+          <a href="https://mailchi.mp/94197b94810c/ztmstudents">
+            <button class="btn btn-primary btn-xl">Find out more</button>
+          </a>
+        </section>
+      </div>
+    </div>
+  </body>
+  </html>
